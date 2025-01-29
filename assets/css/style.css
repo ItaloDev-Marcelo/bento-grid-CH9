@@ -6,16 +6,18 @@
 }
 
 :root {
---Purple-100: hsl(254, 88%, 90%)
---Purple-500: hsl(256, 67%, 59%)
---Yellow-100: hsl(31, 66%, 93%)
---Yellow-500: hsl(39, 100%, 71%)
---White: hsl(0, 0%, 100%)
---Black: hsl(0, 0%, 7%)
+--Purple-100: hsl(254, 88%, 90%);
+--Purple-500: hsl(256, 67%, 59%);
+--Yellow-100: hsl(31, 66%, 93%);
+--Yellow-500: hsl(39, 100%, 71%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 7%);
 }
 
 body {
     font-size: 1.125em;
+    background-color: #f5f5f5;
+    font-family: "DM Sans", serif;
 }
 
 #container {
@@ -25,7 +27,7 @@ body {
 }
 
 #grid-container {
-    margin: 25px 0 0 0 ;
+    margin: 25px auto ;
     display: grid;
     grid-template-areas:  'G1'  'G2'  'G3'  'G4'  'G5'  'G6'  'G7'  'G8';
     gap: 30px 10px;
@@ -33,6 +35,7 @@ body {
 
 .grid-item1 {
     grid-area: G1;
+    background-color: var(--Purple-500);
 }
 
 #G1-content, #G2-content, #G4-content, #G5-content  {
@@ -59,6 +62,7 @@ body {
 
 .grid-item2 {
     grid-area: G2;
+    background-color: var(--White);
 }
 
 #G2-content {
@@ -79,6 +83,7 @@ body {
     height: 200px;
     padding: .8em 1em;
     overflow: hidden;
+    background-color: var(--Yellow-500);
 }
 
 #G3-content {
@@ -86,7 +91,7 @@ body {
 }
 
 #G3-content  > img {
-    max-width: 65%;
+    max-width: 64%;
 }
 
 #G3-title {
@@ -96,6 +101,7 @@ body {
 
 .grid-item4 {
     grid-area: G4;
+    background-color: var(--Purple-100);
 }
 
 #Schedule-tile {
@@ -109,6 +115,7 @@ body {
 
 .grid-item5 {
     grid-area: G5;
+    background-color: var(--Yellow-500);
 }
 
 #grow-title {
@@ -119,11 +126,14 @@ body {
 
 .grid-item6 {
     grid-area: G6;
+    background-color: var(--White);
 }
 
 #G6-content, #G7-content {
     padding: 1em;
 }
+
+
 
 #audience-title {
     line-height: 30px;
@@ -140,19 +150,50 @@ body {
 }
 .grid-item7 {
     grid-area: G7;
+    background-color: var(--Yellow-100);
+}
+
+#G7-content img{
+    margin-top: 1em;
+  }
+
+#G7-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
 }
 
 .grid-item8 {
     grid-area: G8;
+    background-color: var(--Yellow-500);
+}
+
+#G8-content  {
+  padding: 1.5em;
+}
+
+#G8-content img {
+    max-width: 80%;
+}
+
+#IA-txt {
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
 }
 
 .G-all {
     padding: .5em ;
     width: 330px;
     border-radius: 10px;
-    background-color: rebeccapurple;
 }
 
 .G-all img {
     max-width: 75%;
+}
+
+@media (min-width: 1024px) {
+    
+ 
+    
+   
+    
 }
